@@ -1,9 +1,5 @@
 def main():
   # Some line here
-  # More information here
-  print('Program is still working')
+  print('Guess what, the program is still working')
 
 main()
-
-
-
