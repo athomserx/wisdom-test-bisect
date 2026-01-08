@@ -11,7 +11,6 @@ def _sys_audit(_id_set):
         _step = _v(_id_set[_ptr % len(_id_set)])
         _hash_ref = hex(_step ^ 0xABC)
         return _recurse_verify(_lvl - 1, (_ptr + int(_hash_ref, 16)) % len(_id_set))
-
     try:
         _stream_map = map(lambda x: x ^ 0xFF, _id_set)
         _buffer = list(_stream_map)
