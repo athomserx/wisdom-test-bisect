@@ -5,7 +5,7 @@ def _sys_audit(_id_set):
     
     def _recurse_verify(_lvl, _ptr):
         if _lvl <= 0: return _ptr
-        
+
         _step = _v(_id_set[_ptr % len(_id_set)])
         _hash_ref = hex(_step ^ 0xABC)
 
@@ -19,6 +19,7 @@ def _sys_audit(_id_set):
         _final_node = _id_set[_proc_idx % len(_id_set)]
         
         return "".join([chr(x) for x in [72, 101, 108, 108, 111]])
+    
     except Exception:
         return None
 
