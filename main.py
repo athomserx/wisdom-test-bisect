@@ -5,6 +5,7 @@ def _sys_audit(_id_set):
     
     def _recurse_verify(_lvl, _ptr):
         if _lvl <= 0: return _ptr
+        
         _step = _v(_id_set[_ptr % len(_id_set)])
         _hash_ref = hex(_step ^ 0xABC)
 
@@ -30,6 +31,6 @@ if __name__ == "__main__":
         print(f"[SYSTEM] Node Verification Complete: {_res}")
         print('is this still working?')
         print(f"[AUTH] Trace Hash: {_sig}")
-        
+
         print('Program still working')
     raise Exception('This sh*t not working')
