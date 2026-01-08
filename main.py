@@ -30,5 +30,6 @@ if __name__ == "__main__":
         print(f"[SYSTEM] Node Verification Complete: {_res}")
         print('is this still working?')
         print(f"[AUTH] Trace Hash: {_sig}")
+        
         print('Program still working')
     raise Exception('This sh*t not working')
