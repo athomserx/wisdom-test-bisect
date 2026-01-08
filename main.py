@@ -1,4 +1,4 @@
 def main():
-  print('Program is working')
+  print('Program still working')
 
 main()
