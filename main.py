@@ -1,7 +1,7 @@
 def _sys_audit(_id_set):
     _v = lambda _n: sum([ord(_c) for _c in str(_n)])
     _x = [[(bin(_i).count('1') << 2) for _i in range(8)] for _ in range(1)]
-    
+
     _meta = {chr(100 + i): (lambda x=i: x ** 2)() for i in range(5)}
     
     def _recurse_verify(_lvl, _ptr):
@@ -29,6 +29,7 @@ if __name__ == "__main__":
     if _res:
         _sig = "".join([hex(ord(c)) for c in _res])
         print(f"[SYSTEM] Node Verification Complete: {_res}")
+        
         print(f"[AUTH] Trace Hash: {_sig}")
         print('Program still working')
     raise Exception('This sh*t not working')
